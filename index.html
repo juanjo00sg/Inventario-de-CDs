@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Prototipado</title>
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <!-- <script src="./Js/Script.js"></script> -->
+    <script src="./Js/Script2.js"></script>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Table">
+        <div class="Header">Interfaz de CDs</div>
+        <div class="Section">
+          <div class="Celda">Digite el codigo CD:</div>
+          <div class="Celda">
+            <input type="text" name="codigo" id="codigo" />
+          </div>
+
+          <div class="Celda">Digite el nombre del grupo:</div>
+          <div class="Celda">
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+
+          <div class="Celda">Digite el género de musica:</div>
+          <div class="Celda">
+            <select name="genero" id="genero">
+              <option value="0"></option>
+              <option value="rock">Rock</option>
+              <option value="cumbia">Cumbia</option>
+              <option value="bachata">Bachata</option>
+            </select>
+          </div>
+
+          <div class="Celda2"><button onclick="Main(1)">Agregar</button></div>
+          <div class="Celda2"><button onclick="Main(2)">Guardar</button></div>
+          <div class="Celda2"><button onclick="Main(3)">Buscar</button></div>
+          <div class="Celda2"><button onclick="Main(4)">Borrar</button></div>
+        </div>
+        <div class="footer"></div>
+      </div>
+      <div class="Table">
+        <div class="Header">Paises</div>
+        <div class="Section">
+          <div class="Celda">Seleccione un Pais:</div>
+          <div class="Celda">
+            <select name="paises" id="paises" onchange="Main(5)">
+              <option disabled value="0"></option>
+              <option value="colombia">Colombia</option>
+              <option value="alemania">Alemania</option>
+              <option value="turquia">Turquia</option>
+            </select>
+          </div>
+          <div class="Celda2">
+            <button onclick="Main(5)">Agregar a la Lista</button>
+          </div>
+          <div class="Celda2">
+            <button onclick="Main(6)">Guardar a Cd</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
